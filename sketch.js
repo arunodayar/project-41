@@ -2,7 +2,7 @@ const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
-var thun1, thun2, thun3, thun4;
+var thun,thun1, thun2, thun3, thun4;
 
 var engine, world;
 var maxDrops = 100;
@@ -19,7 +19,7 @@ function preload(){
 }
 
 function setup(){
-    var canvas = createCanvas(1350,650);
+    var canvas = createCanvas(650,650);
     
     engine = Engine.create();
     world = engine.world;
@@ -37,7 +37,7 @@ function setup(){
 }
 
 function draw(){
-    background(black);
+    background("black")
     Engine.update(engine);
 
 
